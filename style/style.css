@@ -1,0 +1,152 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.container{
+	padding: 0 5%;
+}
+
+
+/*Header-top*/
+
+.top-header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+	font-size: 20px;
+}
+
+.logo-box{
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	width: 40px;
+	height: 40px;
+	background-color: #aeaeae;
+	margin-right: 10px;
+}
+
+/*Header-navbar*/
+
+.header-navbar{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #aeaeae;
+	height: 70px;
+}
+
+.left-nav,
+.right-nav{
+	display: flex;
+}
+
+.left-nav p{
+	font-size: 20px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.right-nav p{
+	font-size: 17px;
+	margin: 0 10px;
+	cursor: pointer;
+}
+
+.nav-icon{
+	background-color: #000;
+	height: 20px;
+	width: 30px;
+}
+
+.nav-item-box{
+	display: flex;
+	align-items: center;
+}
+
+.nav-menu-icon{
+	height: 20px;
+	width: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.menu-icon-item{
+	background-color: #000;
+	height: 25%;
+	width: 100%;
+}
+
+.menu-item:after{
+	content: '▼';
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+
+/*Section*/
+
+.main{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.img{
+	background-color: #aeaeae;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100% / 12 * 3);
+	max-width: 320px;
+}
+
+/* news */
+
+.news-wrap{
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100% / 12 * 9);
+	margin: -15px;
+	margin-left: 30px;
+}
+
+.news-block{
+	background-color: #aeaeae;
+	box-sizing: border-box;
+	width: calc(33% - 30px);
+	margin: 15px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.news-block:last-child{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.news-block p:last-child{
+	text-align: right;
+}
+
+@media screen and (max-width: 1871px){
+	.news-block{
+		width: calc(50% - 30px);
+	}
+}
+
+@media screen and (max-width: 1251px){
+	.news-block{
+		width: calc(100% - 30px);
+	}
+}
